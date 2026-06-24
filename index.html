@@ -5,10 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Bank</title>
+    <!-- daisyui CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
     <main>
+
+        <!-- login section -->
+        <section class="bg-[#F4F5F7] w-full h-[100vh] flex flex-col justify-center items-center">
+            <div class=" w-[340px] h-[150px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+                <img src="assets/Group.png" alt="">
+
+            </div>
+            <form class="">
+                <div class="bg-white p-8 rounded-xl w-[400px] h-[317px]">
+                    <label class="font-semibold">Mobile Number</label>
+                    <br>
+                    <input class="my-3 rounded-2xl input w-full" type="text" placeholder="Enter your number" />
+                    <br>
+                    <label class="font-semibold" for="">4 Digit Pin</label>
+                    <br>
+                    <input class="mt-3 rounded-2xl w-full input" type="text" placeholder="Enter 4 digit Pim" />
+                    <br>
+                    <button class="btn bg-[#0874F2] rounded-2xl w-full mt-6 text-white">Login</button>
+                </div>
+
+            </form>
+
+        </section>
 
     </main>
 
