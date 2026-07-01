@@ -24,7 +24,7 @@
                     <img src="assets/Group.png" alt="">
                 </div>
                 <div class="p-4">
-                    <h2 class="font-extrabold text-lg text-[#080808]">$ <span>4500</span></h2>
+                    <h2 class="font-extrabold text-lg text-[#080808]">$ <span id="total-blance">4500</span></h2>
                     <p class="font-normal text-xm text-[#080808]">Available Balance</p>
 
                 </div>
@@ -90,7 +90,7 @@
                 <div class="bg-white p-8 rounded-xl w-full">
                     <label class="font-medium text-base text-[#080808e6]">Select A Bank</label>
                     <br>
-                    <select class="select select-neutral my-3 rounded-2xl w-full">
+                    <select id="add-bank" class="select select-neutral my-3 rounded-2xl w-full">
                         <option disabled selected>Select back</option>
                         <option>DBBL</option>
                         <option>AB Bank</option>
@@ -100,29 +100,33 @@
 
                     <label class="font-medium text-base text-[#080808e6]" for="">Bank Account Number</label>
                     <br>
-                    <input id="" class="my-3 rounded-2xl w-full input" type="text"
+                    <input id="add-account" class="my-3 rounded-2xl w-full input" type="text"
                         placeholder="Enter 11 digit account number" />
                     <br>
 
                     <label class="font-medium text-base text-[#080808e6]" for="">Amount to Add</label>
                     <br>
-                    <input id="" class="my-3 rounded-2xl w-full input" type="text"
+                    <input id="add-amount" class="my-3 rounded-2xl w-full input" type="text"
                         placeholder="Add Amount to withdraw" />
                     <br>
 
                     <label class="font-medium text-base text-[#080808e6]" for="">Pin Number</label>
                     <br>
-                    <input id="" class="my-3 rounded-2xl w-full input" type="text"
+                    <input id="add-pin" class="my-3 rounded-2xl w-full input" type="text"
                         placeholder="Enter 4 digit pin number" />
                     <br>
 
-                    <button id="" class="btn bg-[#0874F2] rounded-2xl w-full h-[52px] mt-6 text-white">Add
+                    <button id="btn-add-money" class="btn bg-[#0874F2] rounded-2xl w-full h-[52px] mt-6 text-white">Add
                         Money</button>
                 </div>
 
             </form>
         </section>
+
     </main>
+
+    <!-- js File Add -->
+    <script src="js/home.js"></script>
 </body>
 
 </html>
