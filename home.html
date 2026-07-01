@@ -15,8 +15,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="w-4xl mx-auto ">
-    <main class="bg-[#F4F5F7] w-full  h-[100vh] p-8 ">
+<body class="w-xl mx-auto ">
+    <main class="bg-[#F4F5F7] w-full   p-8 ">
         <!-- home banner Section -->
         <section class="flex justify-between items-center my-5">
             <div class="  flex items-center ">
@@ -80,6 +80,47 @@
 
             </div>
 
+        </section>
+
+        <!-- all form section here -->
+        <!-- add money section -->
+        <section class="my-6">
+            <h1 class="all-form text-[#080808e6] font-semibold text-lg mb-3">Add Money</h1>
+            <form class="">
+                <div class="bg-white p-8 rounded-xl w-full">
+                    <label class="font-medium text-base text-[#080808e6]">Select A Bank</label>
+                    <br>
+                    <select class="select select-neutral my-3 rounded-2xl w-full">
+                        <option disabled selected>Select back</option>
+                        <option>DBBL</option>
+                        <option>AB Bank</option>
+                        <option>NRBC Bank</option>
+                    </select>
+                    <br>
+
+                    <label class="font-medium text-base text-[#080808e6]" for="">Bank Account Number</label>
+                    <br>
+                    <input id="" class="my-3 rounded-2xl w-full input" type="text"
+                        placeholder="Enter 11 digit account number" />
+                    <br>
+
+                    <label class="font-medium text-base text-[#080808e6]" for="">Amount to Add</label>
+                    <br>
+                    <input id="" class="my-3 rounded-2xl w-full input" type="text"
+                        placeholder="Add Amount to withdraw" />
+                    <br>
+
+                    <label class="font-medium text-base text-[#080808e6]" for="">Pin Number</label>
+                    <br>
+                    <input id="" class="my-3 rounded-2xl w-full input" type="text"
+                        placeholder="Enter 4 digit pin number" />
+                    <br>
+
+                    <button id="" class="btn bg-[#0874F2] rounded-2xl w-full h-[52px] mt-6 text-white">Add
+                        Money</button>
+                </div>
+
+            </form>
         </section>
     </main>
 </body>
