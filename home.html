@@ -48,32 +48,38 @@
                 </p>
             </div>
             <div class="freture_cards grid grid-cols-3 grid-rows-2 gap-3 pt-6">
-                <div class=" w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
+                <div id="add-money-parent-btn"
+                    class=" w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
                     <img class="w-[24px] h-[24px]" src="assets/wallet1.png" alt="">
                     <h2 class="text-[#080808b3] font-medium text-base">Add Money</h2>
                 </div>
 
-                <div class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
+                <div id="cash-out-parent-btn"
+                    class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
                     <img class="w-[24px] h-[24px]" src="assets/send1.png" alt="">
                     <h2 class="text-[#080808b3] font-medium text-base">Cashout</h2>
                 </div>
 
-                <div class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
+                <div id="transfer-money-parent-btn"
+                    class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
                     <img class="w-[24px] h-[24px]" src="assets/money1.png" alt="">
                     <h2 class="text-[#080808b3] font-medium text-base">Transfer Money</h2>
                 </div>
 
-                <div class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
+                <div id="get-bonus-parent-btn"
+                    class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
                     <img class="w-[24px] h-[24px]" src="assets/bonus1.png" alt="">
                     <h2 class="text-[#080808b3] font-medium text-base">Get Bonus</h2>
                 </div>
 
-                <div class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
+                <div id="pay-bil-parent-btn"
+                    class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
                     <img class="w-[24px] h-[24px]" src="assets/purse1.png" alt="">
                     <h2 class="text-[#080808b3] font-medium text-base">Pay Bill</h2>
                 </div>
 
-                <div class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
+                <div id="transactions-parent-btn"
+                    class="w-[1/3] h-[90px] flex flex-col justify-center items-center bg-white rounded-xl">
                     <img class="w-[24px] h-[24px]" src="assets/transaction1.png" alt="">
                     <h2 class="text-[#080808b3] font-medium text-base">Transactions</h2>
                 </div>
@@ -84,7 +90,7 @@
 
         <!-- all form section here -->
         <!-- add money section -->
-        <section class="my-6">
+        <section id="add-money-section" style="display: none;" class="my-6">
             <h1 class="all-form text-[#080808e6] font-semibold text-lg mb-3">Add Money</h1>
             <form class="">
                 <div class="bg-white p-8 rounded-xl w-full">
@@ -118,6 +124,36 @@
 
                     <button id="btn-add-money" class="btn bg-[#0874F2] rounded-2xl w-full h-[52px] mt-6 text-white">Add
                         Money</button>
+                </div>
+
+            </form>
+        </section>
+
+        <!-- CashOut -->
+        <section id="cash-out-section" style="display: none;" class="my-6">
+            <h1 class="all-form text-[#080808e6] font-semibold text-lg mb-3">Cash Out</h1>
+            <form class="">
+                <div class="bg-white p-8 rounded-xl w-full">
+                    <label class="font-medium text-base text-[#080808e6]">Agent Number</label>
+                    <br>
+                    <input id="agent-account" class="my-3 rounded-2xl w-full input" type="text"
+                        placeholder="Enter 11 digit number" />
+                    <br>
+
+                    <label class="font-medium text-base text-[#080808e6]" for="">Amount</label>
+                    <br>
+                    <input id="cash-out-amount" class="my-3 rounded-2xl w-full input" type="text"
+                        placeholder="Enter amount to withdraw" />
+                    <br>
+
+                    <label class="font-medium text-base text-[#080808e6]" for="">Pin Number</label>
+                    <br>
+                    <input id="cashout-pin" class="my-3 rounded-2xl w-full input" type="text"
+                        placeholder="Enter 4 digit pin number" />
+                    <br>
+
+                    <button id="btn-cash-out"
+                        class="btn bg-[#0874F2] rounded-2xl w-full h-[52px] mt-6 text-white">Withdraw Money</button>
                 </div>
 
             </form>
